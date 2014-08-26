@@ -1,9 +1,6 @@
-koa-session-sequelize
-=====================
+# koa-session-sequelize
 
 sequelizejs based koa session middleware
-
-# koa-session-sequelize
 
 sequelize storage layer for [koa-session-store](https://github.com/hiddentao/koa-session-store) or [koa-generic-session](https://github.com/koajs/generic-session).  
 
