@@ -1,0 +1,126 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish', './' ]
+2 info using npm@1.4.9
+3 info using node@v0.11.13
+4 verbose publish [ './' ]
+5 verbose cache add [ './', null ]
+6 verbose cache add name=undefined spec="./" args=["./",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: './',
+7 verbose parsed url   path: './',
+7 verbose parsed url   href: './' }
+8 silly lockFile 0ee6c175- ./
+9 verbose lock ./ /home/brian/.npm/0ee6c175-.lock
+10 verbose tar pack [ '/home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz',
+10 verbose tar pack   './' ]
+11 verbose tarball /home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz
+12 verbose folder ./
+13 info prepublish koa-session-sequelize@0.0.1
+14 silly lockFile 04cb2bca-tar tar://./
+15 verbose lock tar://./ /home/brian/.npm/04cb2bca-tar.lock
+16 silly lockFile ef7c65fa-49579-0-3024832259397954-tmp-tgz tar:///home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz
+17 verbose lock tar:///home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz /home/brian/.npm/ef7c65fa-49579-0-3024832259397954-tmp-tgz.lock
+18 silly lockFile 04cb2bca-tar tar://./
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile ef7c65fa-49579-0-3024832259397954-tmp-tgz tar:///home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz
+21 silly lockFile ef7c65fa-49579-0-3024832259397954-tmp-tgz tar:///home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz
+22 verbose tar unpack /home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz
+23 silly lockFile 043289bc--session-sequelize-0-0-1-package tar:///home/brian/.npm/koa-session-sequelize/0.0.1/package
+24 verbose lock tar:///home/brian/.npm/koa-session-sequelize/0.0.1/package /home/brian/.npm/043289bc--session-sequelize-0-0-1-package.lock
+25 silly lockFile ef7c65fa-49579-0-3024832259397954-tmp-tgz tar:///home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz
+26 verbose lock tar:///home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz /home/brian/.npm/ef7c65fa-49579-0-3024832259397954-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+30 silly gunzTarPerm extractEntry .npmignore
+31 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+34 silly gunzTarPerm extractEntry index.js
+35 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+36 silly gunzTarPerm extractEntry test/index.js
+37 silly gunzTarPerm modified mode [ 'test/index.js', 438, 420 ]
+38 silly gunzTarPerm extractEntry test/session-store.js
+39 silly gunzTarPerm modified mode [ 'test/session-store.js', 438, 420 ]
+40 silly gunzTarPerm extractEntry test/mocha.opts
+41 silly gunzTarPerm modified mode [ 'test/mocha.opts', 438, 420 ]
+42 silly lockFile 043289bc--session-sequelize-0-0-1-package tar:///home/brian/.npm/koa-session-sequelize/0.0.1/package
+43 silly lockFile 043289bc--session-sequelize-0-0-1-package tar:///home/brian/.npm/koa-session-sequelize/0.0.1/package
+44 silly lockFile ef7c65fa-49579-0-3024832259397954-tmp-tgz tar:///home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz
+45 silly lockFile ef7c65fa-49579-0-3024832259397954-tmp-tgz tar:///home/brian/tmp/npm-19704-KcrZJatz/1409046649579-0.3024832259397954/tmp.tgz
+46 silly lockFile 0ee6c175- ./
+47 silly lockFile 0ee6c175- ./
+48 silly publish { name: 'koa-session-sequelize',
+48 silly publish   version: '0.0.1',
+48 silly publish   description: 'Sequelize based storage layer for Koa session middleware',
+48 silly publish   main: 'index.js',
+48 silly publish   scripts: { test: 'NODE_ENV=test ./node_modules/.bin/mocha --harmony test/index.js' },
+48 silly publish   keywords: [ 'koa', 'sequelize', 'session', 'store' ],
+48 silly publish   author: { name: 'Brian Zhang', email: 'gzhang.82@gmail.com' },
+48 silly publish   license: 'MIT',
+48 silly publish   dependencies: { 'koa-route': '^2.1.0', sequelize: '^1.7.9' },
+48 silly publish   devDependencies:
+48 silly publish    { supertest: '^0.13.0',
+48 silly publish      'co-mocha': '^1.0.0',
+48 silly publish      'co-supertest': '0.0.7',
+48 silly publish      koa: '^0.10.0',
+48 silly publish      'koa-generic-session': '^1.1.2',
+48 silly publish      'koa-session-store': '^1.1.1',
+48 silly publish      mocha: '^1.21.4',
+48 silly publish      should: '4.0.4',
+48 silly publish      sqlite3: '^2.2.7' },
+48 silly publish   engines: { node: '>= 0.11.9' },
+48 silly publish   readmeFilename: 'README.md',
+48 silly publish   readme: '# koa-session-sequelize\n\nsequelizejs based koa session middleware\n\nsequelize storage layer for [koa-session-store](https://github.com/hiddentao/koa-session-store) or [koa-generic-session](https://github.com/koajs/generic-session).  \n\n\n## Installation\n\n```\nnpm install koa-session-sequelize\n```\n\n## Usage\n\nThis store requires either [koa-session-store](https://github.com/hiddentao/koa-session-store) or [koa-generic-session](https://github.com/koajs/generic-session).\n\n```\nvar session = require(\'koa-session-store\'); // or you can use \'koa-generic-session\'\nvar Sequelize = require(\'sequelize\');\n\n\nvar koa = require(\'koa\');\n\n// instantiation Sequelize see [Sequelize API Reference](https://github.com/sequelize/sequelize/wiki/API-Reference) for more detail\nvar sequelize = new Sequelize(\'test\', \'username\', \'***\', {  // instantiation\n  dialect: \'sqlite\',\n  storage: \':memory:\'\n});\n\nvar sequelizeStore = require(\'koa-session-sequelize\');\n\nvar app = koa();\n\napp.keys = [\'some secret key\'];  // needed for cookie-signing\n\napp.use(session({\n  store: sequelizeStore.create(sequelize, {\n    table: \'sessions\',   // table to store sessions (optional, default to \'sessions\')\n    model: \'Session\'     // model to represent session (optional, default to \'Session\')\n  })\n}));\n\napp.use(function *() {\n  var n = this.session.views || 0;\n  this.session.views = ++n;\n  this.body = n + \' views\';\n});\n\napp.listen(3000, function () {\n  console.log(\'listening on port 3000\');\n});\n```\n\nYou can specify model name, collection name, and expiration time (in seconds):\n\n\n## Other Relevant Modules\n\n* [koa-generic-session](https://github.com/koajs/generic-session)\n* [koa-session-store](https://github.com/hiddentao/koa-session-store)  \n\n## Tests\n\nFrom root directory:\n\n```\nnpm install && npm test\n```\n\nTests will be run with in-memory sqlite database.\n\n## License\n\nThe MIT License (MIT)\n\nCopyright (c) 2014 Brian Zhang < [gzhang.82@gmail.com](mailto:gzhang.82@gmail.com) >\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n',
+48 silly publish   _id: 'koa-session-sequelize@0.0.1',
+48 silly publish   _shasum: '17736caea00a3d71132bb9fac3ae3abf34dbedea',
+48 silly publish   _from: './' }
+49 verbose url raw koa-session-sequelize
+50 verbose url resolving [ 'https://registry.npmjs.org/', './koa-session-sequelize' ]
+51 verbose url resolved https://registry.npmjs.org/koa-session-sequelize
+52 info trying registry request attempt 1 at 17:50:49
+53 http PUT https://registry.npmjs.org/koa-session-sequelize
+54 http 403 https://registry.npmjs.org/koa-session-sequelize
+55 verbose headers { date: 'Tue, 26 Aug 2014 09:50:48 GMT',
+55 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+55 verbose headers   'content-type': 'application/json',
+55 verbose headers   'cache-control': 'max-age=60',
+55 verbose headers   'content-length': '5490',
+55 verbose headers   'accept-ranges': 'bytes',
+55 verbose headers   via: '1.1 varnish',
+55 verbose headers   'x-served-by': 'cache-ty68-TYO',
+55 verbose headers   'x-cache': 'MISS',
+55 verbose headers   'x-cache-hits': '0',
+55 verbose headers   'x-timer': 'S1409046648.200175,VS0,VE436',
+55 verbose headers   connection: 'close' }
+56 error publish Failed PUT 403
+57 error Error: forbidden cannot modify pre-existing version: 0.0.1
+57 error old={"name":"koa-session-sequelize","version":"0.0.1","description":"Sequelize based storage layer for Koa session middleware","main":"index.js","scripts":{"test":"NODE_ENV=test ./node_modules/.bin/mocha --harmony test/index.js"},"keywords":["koa","sequelize","session","store"],"author":{"name":"Brian Zhang","email":"gzhang.82@gmail.com"},"license":"MIT","dependencies":{"koa-route":"^2.1.0","sequelize":"^1.7.9"},"devDependencies":{"supertest":"^0.13.0","co-mocha":"^1.0.0","co-supertest":"0.0.7","koa":"^0.10.0","koa-generic-session":"^1.1.2","koa-session-store":"^1.1.1","mocha":"^1.21.4","should":"4.0.4","sqlite3":"^2.2.7"},"engines":{"node":">= 0.11.9"},"_id":"koa-session-sequelize@0.0.1","_shasum":"cd9374e4f59a3131587234034b053b789682c987","_from":"./","_npmVersion":"1.4.9","_npmUser":{"name":"brianzhang","email":"gzhang.82@gmail.com"},"maintainers":[{"name":"brianzhang","email":"gzhang.82@gmail.com"}],"dist":{"shasum":"cd9374e4f59a3131587234034b053b789682c987","tarball":"http://registry.npmjs.org/koa-session-sequelize/-/koa-session-sequelize-0.0.1.tgz"}}
+57 error new={"name":"koa-session-sequelize","version":"0.0.1","description":"Sequelize based storage layer for Koa session middleware","main":"index.js","scripts":{"test":"NODE_ENV=test ./node_modules/.bin/mocha --harmony test/index.js"},"keywords":["koa","sequelize","session","store"],"author":{"name":"Brian Zhang","email":"gzhang.82@gmail.com"},"license":"MIT","dependencies":{"koa-route":"^2.1.0","sequelize":"^1.7.9"},"devDependencies":{"supertest":"^0.13.0","co-mocha":"^1.0.0","co-supertest":"0.0.7","koa":"^0.10.0","koa-generic-session":"^1.1.2","koa-session-store":"^1.1.1","mocha":"^1.21.4","should":"4.0.4","sqlite3":"^2.2.7"},"engines":{"node":">= 0.11.9"},"readmeFilename":"README.md","readme":"# koa-session-sequelize\u000a\u000asequelizejs based koa session middleware\u000a\u000asequelize storage layer for [koa-session-store](https://github.com/hiddentao/koa-session-store) or [koa-generic-session](https://github.com/koajs/generic-session).  \u000a\u000a\u000a## Installation\u000a\u000a```\u000anpm install koa-session-sequelize\u000a```\u000a\u000a## Usage\u000a\u000aThis store requires either [koa-session-store](https://github.com/hiddentao/koa-session-store) or [koa-generic-session](https://github.com/koajs/generic-session).\u000a\u000a```\u000avar session = require('koa-session-store'); // or you can use 'koa-generic-session'\u000avar Sequelize = require('sequelize');\u000a\u000a\u000avar koa = require('koa');\u000a\u000a// instantiation Sequelize see [Sequelize API Reference](https://github.com/sequelize/sequelize/wiki/API-Reference) for more detail\u000avar sequelize = new Sequelize('test', 'username', '***', {  // instantiation\u000a  dialect: 'sqlite',\u000a  storage: ':memory:'\u000a});\u000a\u000avar sequelizeStore = require('koa-session-sequelize');\u000a\u000avar app = koa();\u000a\u000aapp.keys = ['some secret key'];  // needed for cookie-signing\u000a\u000aapp.use(session({\u000a  store: sequelizeStore.create(sequelize, {\u000a    table: 'sessions',   // table to store sessions (optional, default to 'sessions')\u000a    model: 'Session'     // model to represent session (optional, default to 'Session')\u000a  })\u000a}));\u000a\u000aapp.use(function *() {\u000a  var n = this.session.views || 0;\u000a  this.session.views = ++n;\u000a  this.body = n + ' views';\u000a});\u000a\u000aapp.listen(3000, function () {\u000a  console.log('listening on port 3000');\u000a});\u000a```\u000a\u000aYou can specify model name, collection name, and expiration time (in seconds):\u000a\u000a\u000a## Other Relevant Modules\u000a\u000a* [koa-generic-session](https://github.com/koajs/generic-session)\u000a* [koa-session-store](https://github.com/hiddentao/koa-session-store)  \u000a\u000a## Tests\u000a\u000aFrom root directory:\u000a\u000a```\u000anpm install && npm test\u000a```\u000a\u000aTests will be run with in-memory sqlite database.\u000a\u000a## License\u000a\u000aThe MIT License (MIT)\u000a\u000aCopyright (c) 2014 Brian Zhang < [gzhang.82@gmail.com](mailto:gzhang.82@gmail.com) >\u000a\u000aTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\u000aIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\u000aFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\u000aAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\u000aLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\u000aOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\u000aTHE SOFTWARE.\u000a","_id":"koa-session-sequelize@0.0.1","_shasum":"17736caea00a3d71132bb9fac3ae3abf34dbedea","_from":"./","_npmVersion":"1.4.9","_npmUser":{"name":"brianzhang","email":"gzhang.82@gmail.com"},"maintainers":[{"name":"brianzhang","email":"gzhang.82@gmail.com"}],"dist":{"shasum":"17736caea00a3d71132bb9fac3ae3abf34dbedea","tarball":"http://registry.npmjs.org/koa-session-sequelize/-/koa-session-sequelize-0.0.1.tgz"}}: koa-session-sequelize
+57 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+57 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+57 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+57 error     at Request.EventEmitter.emit (events.js:110:17)
+57 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+57 error     at Request.EventEmitter.emit (events.js:129:20)
+57 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+57 error     at IncomingMessage.EventEmitter.emit (events.js:129:20)
+57 error     at _stream_readable.js:898:16
+57 error     at process._tickCallback (node.js:343:11)
+58 error If you need help, you may report this *entire* log,
+58 error including the npm and node versions, at:
+58 error     <http://github.com/npm/npm/issues>
+59 error System Linux 3.13.0-32-generic
+60 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "./"
+61 error cwd /home/brian/Development/nodejs/koa-session-sequelize
+62 error node -v v0.11.13
+63 error npm -v 1.4.9
+64 verbose exit [ 1, true ]
