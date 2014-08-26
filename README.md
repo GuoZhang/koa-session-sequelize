@@ -35,7 +35,7 @@ var app = koa();
 app.keys = ['some secret key'];  // needed for cookie-signing
 
 app.use(session({
-  store: sequelizeStore.create({
+  store: sequelizeStore.create(sequelize, {
     table: 'sessions',   // table to store sessions (optional, default to 'sessions')
     model: 'Session'     // model to represent session (optional, default to 'Session')
   })
