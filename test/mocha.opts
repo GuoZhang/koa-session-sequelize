@@ -1,0 +1,4 @@
+--require co-mocha
+--reporter dot
+--recursive
+--timeout 2s
