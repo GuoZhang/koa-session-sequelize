@@ -1,6 +1,6 @@
 {
   "name": "koa-session-sequelize",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Sequelize based storage layer for Koa session middleware",
   "main": "index.js",
   "scripts": {

@@ -36,8 +36,10 @@ app.keys = ['some secret key'];  // needed for cookie-signing
 
 app.use(session({
   store: sequelizeStore.create(sequelize, {
-    table: 'sessions',   // table to store sessions (optional, default to 'sessions')
-    model: 'Session'     // model to represent session (optional, default to 'Session')
+    table: 'sessions',   // (optional) table to store sessions (default to 'sessions')
+    model: 'Session',    // (optional) model to represent session (default to 'Session')
+    dataField: { type: Sequelize.STRING, allowNull: true }  // (optinal) dataField definition (defaults to: { type: Sequelize.STRING, allowNull: true })
+                                                            // type of this field should be those that can hold string data
   })
 }));
 

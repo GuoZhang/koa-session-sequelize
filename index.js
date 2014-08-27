@@ -68,12 +68,11 @@ exports.create = function (sequelize, options) {
   options.expires = options.expires || 60 * 60 * 24 * 14; // 2 weeks
   options.table = options.table || 'sessions';
   options.model = options.model || 'Session';  // model name
-  options.sessionLength = options.sessionLength || 255;
-
+  
   var Session = sequelize.import('koa-session-sequelize-' + options.model, function (sequelize, DataTypes) {
     return sequelize.define(options.model, {
         id: { type: DataTypes.STRING, allowNull: false, autoIncrement:false, primaryKey: true },
-        blob: { type: DataTypes.STRING(options.sessionLength), allowNull: true }
+        blob: options.dataField || { type: DataTypes.STRING, allowNull: true }
       }, {
         tableName: options.table
     });
