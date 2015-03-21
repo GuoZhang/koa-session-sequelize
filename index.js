@@ -40,7 +40,7 @@ SequelizeStore.prototype.set = SequelizeStore.prototype.save = function *(sid, b
       id: sid,
       blob: blob
     };
-    var affectedRows = yield this.Session.update(data, { id: sid });
+    var affectedRows = yield this.Session.update(data, { where: {id: sid} });
     if (affectedRows == 0) { // no affected rows => assume the record not exists
       yield this.Session.build(data).save();
     }
