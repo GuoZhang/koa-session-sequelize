@@ -1,6 +1,6 @@
 {
   "name": "koa-session-sequelize",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Sequelize based storage layer for Koa session middleware",
   "main": "index.js",
   "scripts": {
@@ -17,9 +17,8 @@
     "email": "gzhang.82@gmail.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "koa-route": "^2.1.0",
-    "sequelize": "^1.7.9"
+  "peerDependencies": {
+    "sequelize": "^2.0.5"
   },
   "devDependencies": {
     "supertest": "^0.13.0",
