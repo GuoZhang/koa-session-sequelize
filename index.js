@@ -12,7 +12,7 @@ var SequelizeStore = function (Session) {
 // for koa-sess
 SequelizeStore.prototype.get = function *(sid, parse) {
   try {
-    var data = yield this.Session.find({ id: sid });
+    var data = yield this.Session.find({ where: { id: sid } });
     if (data && data.id) {
       if (parse === false) return data.blob;
       return JSON.parse(data.blob);
@@ -40,7 +40,7 @@ SequelizeStore.prototype.set = SequelizeStore.prototype.save = function *(sid, b
       id: sid,
       blob: blob
     };
-    var affectedRows = yield this.Session.update(data, { id: sid });
+    var affectedRows = yield this.Session.update(data, { where: { id: sid } });
     if (affectedRows == 0) { // no affected rows => assume the record not exists
       yield this.Session.build(data).save();
     }
@@ -54,7 +54,7 @@ SequelizeStore.prototype.set = SequelizeStore.prototype.save = function *(sid, b
  */
 SequelizeStore.prototype.destroy = SequelizeStore.prototype.remove = function *(sid) {
   try {
-    yield this.Session.destroy({ id: sid });
+    yield this.Session.destroy({ where: { id: sid } });
   } catch (err) {
     console.error(err.stack);
   }
@@ -68,7 +68,7 @@ exports.create = function (sequelize, options) {
   options.expires = options.expires || 60 * 60 * 24 * 14; // 2 weeks
   options.table = options.table || 'sessions';
   options.model = options.model || 'Session';  // model name
-  
+
   var Session = sequelize.import('koa-session-sequelize-' + options.model, function (sequelize, DataTypes) {
     return sequelize.define(options.model, {
         id: { type: DataTypes.STRING, allowNull: false, autoIncrement:false, primaryKey: true },
@@ -77,6 +77,6 @@ exports.create = function (sequelize, options) {
         tableName: options.table
     });
   });
-  
+
   return new SequelizeStore(Session);
 };
